@@ -74,3 +74,15 @@ function finalizarPedido(){
 }
 
 
+function enviarMensagemWhatsApp(){
+    let valorFinal = (precoPratoEscolhido + precoBebidaEscolhida + precoSobremesaEscolhida).toFixed(2);
+
+    let mensagemEnviada = (`Olá, gostaria de fazer o pedido: 
+    - Prato: ${pratoEscolhido} 
+    - Bebida: ${bebidaEscolhida} 
+    - Sobremesa: ${sobremesaEscolhida} 
+    Total: R$ ${valorFinal}`);
+
+    window.open(`https://wa.me/+5521994827528?text=${mensagemEnviada}`)
+
+}
