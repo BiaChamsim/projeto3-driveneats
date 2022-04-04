@@ -41,8 +41,8 @@ h1, h4{
     display: flex;
     flex-direction: column;
     justify-content:center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 
@@ -168,4 +168,5 @@ button {
 
 .final{
     background-color: green;
+    color: #FFFFFF;
 }
