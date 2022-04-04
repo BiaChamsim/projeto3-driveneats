@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto3-driveneats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <div class="header">
+        <h1>DrivenEats</h1>
+        <h4>Sua comida em 6 minutos</h4>
+    </div>
+    <div class="container">
+       <div class="prato">
+           <p>Primeiro, seu prato</p>
+           <div class="opcoes">
+            <div class="carne" onclick="selecionarComida('carne','Carne Moída Com Quiabo', 21.90)">
+                <img class="prato-um" src="./imagens/carne moída com quiabo.jpg">
+                <h2>Carne Moída Com Quiabo</h2>
+                <h3>Acompanha arroz branco e batata saute</h3>
+                <h6>R$21,90</h6>
+            </div>
+            <div class="sanduiche" onclick="selecionarComida('sanduiche','Sanduiche de Cogumelo Com Homus' , 25.90)" >
+                <img class="prato-um" src="./imagens/sanduiche-cogumelo.jpg">
+                <h2>Sanduíche de Cogumelo com Homus</h2>
+                <h3>Acompanha batata chips</h3>
+                <h6>R$25,90</h6>
+            </div>
+            <div class="salmao" onclick="selecionarComida('salmao','Salmão Grelhado Com Brocolis', 32.90)" >
+                <img class="prato-um" src="./imagens/salmao_com_brocolis.png">
+                <h2>Salmão grelhado com brócolis</h2>
+                <h3>Acompanha cuzcuz marroquino</h3>
+                <h6>R$32,90</h6>
+            </div>
+           </div>           
+        </div>
+
+        <div class="bebida">
+            <p>Agora, sua bebida</p>
+            <div class="opcoes">
+                <div class="refri" onclick="selecionarBebida('refri' , 'Refrigerante Lata' , 5.50)" >
+                    <img class="prato-um" src="./imagens/refri.jpeg" >
+                    <h2>Refrigerante Lata</h2>
+                    <h3>Lata 350 ml</h3>
+                    <h6>R$5,50</h6>
+                </div>
+                <div class="icetea" onclick="selecionarBebida('icetea' , 'Ice Tea' , '6.00')" >
+                    <img class="prato-um" src="./imagens/icetea.jpeg" >
+                    <h2>Ice Tea</h2>
+                    <h3>Garrafa 300 ml</h3>
+                    <h6>R$6,00</h6>
+                </div>
+                <div class="h2o" onclick="selecionarBebida('h2o','H2o', 7.00)" >
+                    <img class="prato-um" src="./imagens/h2o.jpeg" >
+                    <h2>H2O</h2>
+                    <h3>Garrafa 500 ml</h3>
+                    <h6>R$7,00</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="sobremesa">
+            <p>Por fim, sua sobremesa</p>
+            <div class="opcoes">
+                <div id="pudim" class="pudim" onclick="selecionarSobremesa('pudim', 'Pudim de Leite', 8.90)" >
+                    <img class="prato-um" src="./imagens/pudim.jpg">
+                    <h2>Pudim de Leite</h2>
+                    <h3>Fatia 200g</h3>
+                    <h6>R$8,90</h6>
+                </div>
+                <div id="musse" class="musse" onclick="selecionarSobremesa('musse', 'Musse de Chocolate' , 9.90)" >
+                    <img class="prato-um" src="./imagens/musse de chocolate.jpg">
+                    <h2>Musse de Chocolate</h2>
+                    <h3>Porção 200g</h3>
+                    <h6>R$9,90</h6>
+                </div>
+                <div id="merengue" class="merengue" onclick="selecionarSobremesa('merengue', 'Banana Grelhada Com Merengue', 10.90)" >
+                    <img class="prato-um" src="./imagens/Banana-com-merengue.jpg">
+                    <h2>Banana Grelhada com Merengue</h2>
+                    <h3>Porção 250g</h3>
+                    <h6>R$10,90</h6>
+                </div>
+            </div>
+        </div> 
+        <div class="bottom">
+            <button>Selecione os 3 itens para fechar o pedido</button >
+        </div>
+              
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
